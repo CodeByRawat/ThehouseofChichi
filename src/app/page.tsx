@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import FeaturedProducts from "@/components/FeaturedProducts";
 import AboutAuthor from "@/components/AboutAuthor";
@@ -13,7 +12,6 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="min-h-screen selection:bg-[#C6A15B] selection:text-white">
-      <Navbar />
       <Hero />
       
       {/* Intro Section */}

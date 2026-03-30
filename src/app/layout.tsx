@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 };
 
 import FloatingSocials from "@/components/FloatingSocials";
+import Navbar from "@/components/Navbar";
 
 export default function RootLayout({
   children,
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.variable} ${playfair.variable} font-sans bg-[#F5EFE6] text-[#1A1A1A] antialiased`}>
+        <Navbar />
         {children}
         <FloatingSocials />
       </body>
