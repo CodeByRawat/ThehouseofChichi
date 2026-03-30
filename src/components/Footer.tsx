@@ -1,19 +1,19 @@
 export default function Footer() {
   return (
     <footer className="bg-[#1A1A1A] text-white py-16">
-      <div className="container mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-3 gap-12">
-        <div>
+      <div className="container mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+        <div className="flex flex-col items-center md:items-start">
           <h2 className="font-serif text-3xl mb-4">
             The House of <span className="text-[#C6A15B]">ChiChi</span>
           </h2>
-          <p className="text-gray-400 max-w-sm mt-4 leading-relaxed tracking-wide">
+          <p className="text-gray-400 max-w-sm mt-2 leading-relaxed tracking-wide">
             A luxury storytelling brand. Where elegance meets imagination.
           </p>
         </div>
         
-        <div>
+        <div className="flex flex-col items-center">
           <h4 className="font-semibold uppercase tracking-widest text-sm mb-6 text-[#C6A15B]">Visit</h4>
-          <ul className="space-y-3 text-gray-400">
+          <ul className="space-y-4 text-gray-400">
             <li><a href="/" className="hover:text-white transition-colors">Home</a></li>
             <li><a href="/#discover" className="hover:text-white transition-colors">The Story</a></li>
             <li><a href="/#music" className="hover:text-white transition-colors">Music</a></li>
@@ -22,10 +22,10 @@ export default function Footer() {
           </ul>
         </div>
         
-        <div>
+        <div className="flex flex-col items-center md:items-end md:text-right">
           <h4 className="font-semibold uppercase tracking-widest text-sm mb-6 text-[#C6A15B]">Connect</h4>
           <p className="text-gray-400">Chelmsford, Essex<br/>United Kingdom</p>
-          <div className="mt-6 flex space-x-5">
+          <div className="mt-6 flex space-x-5 justify-center md:justify-end">
             <a href="https://www.instagram.com/thehouseofchichi_official" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#C6A15B] transition-colors" aria-label="Instagram">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
             </a>
@@ -39,7 +39,7 @@ export default function Footer() {
         </div>
       </div>
       
-      <div className="container mx-auto px-6 lg:px-12 mt-16 pt-8 border-t border-gray-800 text-sm text-gray-500 flex flex-col md:flex-row justify-between">
+      <div className="container mx-auto px-6 lg:px-12 mt-16 pt-8 border-t border-gray-800 text-sm text-gray-500 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
         <p>&copy; 2026 The House of ChiChi.</p>
         <p className="mt-2 md:mt-0">All rights reserved.</p>
       </div>
